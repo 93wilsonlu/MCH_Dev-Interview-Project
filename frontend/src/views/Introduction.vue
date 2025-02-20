@@ -1,21 +1,43 @@
 <template>
   <div class="introduction">
     <header class="intro-header">
-      <h2>自我介紹</h2>
-      <p>
-        簡單自我介紹+本人圖片
-      </p>
-        
-      
+      <img class="profile-image" src="../assets/profile.jpeg" alt="">
+      <div class="intro-text">
+        <h2>自我介紹</h2>
+        <p>
+          我是山羊，目前是一名大學生，過去玩過演算法、資訊安全。
+        </p>
+        <p>
+          平時喜歡研究資安技術，也喜歡看動畫，最近著迷於把 kernel 打爆。
+        </p>
+        <button class="contact-button">聯絡我們</button>
+      </div>
+
+
     </header>
     <section class="about-section">
-      <h3>個人資訊補充</h3>
+      <h3>專長與興趣</h3>
       <ul>
-        <li>好棒棒1</li>
-        <li>好棒棒2</li>
-        <li>好棒棒3</li>
+        <li>二進制安全</li>
+        <li>逆向工程</li>
+        <li>中醫內科</li>
+        <li>動畫</li>
       </ul>
-      
+
+      <h3>做過的垃圾</h3>
+      <ul>
+        <li><a href="https://github.com/93wilsonlu/three_topic_story">三題故事寫作網站</a></li>
+        <li><a href="https://github.com/93wilsonlu/cp-problem-manager">競程題目管理</a></li>
+        <li><a href="https://github.com/93wilsonlu/expiring_food_reminder">過期食物提醒 Linebot</a></li>
+        <li><a href="https://github.com/93wilsonlu/ResistanceCalculator">電阻計算器</a></li>
+      </ul>
+
+      <h3>目前正在做</h3>
+      <ul>
+        <li>kernel 安全</li>
+        <li>讀傷寒論</li>
+        <li>ISC 超級電腦大賽</li>
+      </ul>
     </section>
   </div>
 </template>
@@ -32,8 +54,15 @@
   background-color: #f5f5f5;
   padding: 40px;
   border-radius: 10px;
+  display: flex;
 }
 
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
 
 
 .intro-text h2 {
@@ -73,5 +102,13 @@
 .about-section p {
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.about-section a {
+  color: #656d73;
+}
+
+.about-section a:hover {
+  color: #36383a;
 }
 </style>
