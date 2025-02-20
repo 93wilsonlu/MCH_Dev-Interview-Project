@@ -47,9 +47,8 @@ axios.get("https://mch-dev.userwei.com/api/websites")
 .websites-grid {
   /* TODO: Add styles for a responsive grid layout */
   display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  margin: 0% 10%;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .website-card {
@@ -67,7 +66,7 @@ axios.get("https://mch-dev.userwei.com/api/websites")
 .website-image {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .website-info {
